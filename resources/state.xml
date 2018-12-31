@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<data>
+	<units>F</units>
+	<sensor1>42.8</sensor1>
+	<sensor2>26.2</sensor2>
+	<sensor3>x.x</sensor3>
+	<s1Alrm>0</s1Alrm>
+	<s2Alrm>0</s2Alrm>
+	<s3Alrm>0</s3Alrm>
+	<battery>100</battery>
+	<batteryVoltage>3.2</batteryVoltage>
+	<powersource>External</powersource>
+	<time>1546210239</time>
+</data>
