@@ -1,5 +1,5 @@
 # Sensu Go Control By Web Plugin 
-TravisCI: [![TravisCI Build Status](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugins.svg?branch=master)](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugin)
+TravisCI: [![TravisCI Build Status](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugin.svg?branch=master)](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugin)
 
 Collection of Sensu Agent check commands to interact with Particle Cloud
 
