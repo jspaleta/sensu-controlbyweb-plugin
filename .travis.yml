@@ -18,6 +18,7 @@ before_script:
 
 before_deploy:
 - go get github.com/goreleaser/goreleaser
+- git status
 
 deploy:
   - #goreleaser
