@@ -7,10 +7,8 @@ install:
 - go get github.com/jgautheron/goconst/cmd/goconst
 - go get github.com/kisielk/errcheck
 - go get github.com/golang/dep/cmd/dep
-- git status 
 - dep ensure
 - git status 
-- git diff Gopkg.lock
   
 script:
 - gometalinter.v1 --vendor --disable-all --enable=vet --enable=ineffassign
