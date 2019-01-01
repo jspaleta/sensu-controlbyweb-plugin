@@ -8,13 +8,17 @@ install:
 - go get github.com/kisielk/errcheck
 - go get github.com/golang/dep/cmd/dep
 - dep ensure
+- git status
+
 script:
 - gometalinter.v1 --vendor --disable-all --enable=vet --enable=ineffassign
   --enable=goconst --tests ./...
 - go test -v -race ./...
+- git status
 
 before_script:
 - echo "REPO $TRAVIS_REPO_SLUG TAG ${TRAVIS_TAG}"
+- git status
 
 before_deploy:
 - go get github.com/goreleaser/goreleaser
