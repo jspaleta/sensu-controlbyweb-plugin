@@ -7,5 +7,10 @@ Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
 
+## [0.0.1] - 2018-12-31
+
+### Added
+- working wx110_metric_check and will report all 3 temperature sensors in graphite plaintext format.
+
 ### Added
 - Initial release

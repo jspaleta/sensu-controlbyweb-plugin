@@ -1,21 +1,38 @@
 # Sensu Go Control By Web Plugin 
-TravisCI: [![TravisCI Build Status](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugin.svg?branch=master)](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugin)
+TravisCI: [![TravisCI Build Status](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugins.svg?branch=master)](https://travis-ci.com/jspaleta/sensu-controlbyweb-plugin)
 
-TODO: Description.
+Collection of Sensu Agent check commands to interact with Particle Cloud
 
 ## Installation
 
-Download the latest version of the sensu-controlbyweb-plugin from [releases][1],
+Download the latest version from [releases][1],
 or create an executable script from this source.
 
-From the local path of the sensu-controlbyweb-plugin repository:
+### Build from source
+From the local path of this repository:
 
+#### WX110 Metric Check
 ```
 go build -o /usr/local/bin/wx110_metric_check ./wx110_metric_check/main.go
 ```
 
 ## Configuration
 
+Example Sensu Go definition:
+
+```json
+{
+    "api_version": "core/v2",
+    "type": "check",
+    "metadata": {
+        "namespace": "default",
+        "name": "wx110"
+    },
+    "spec": {
+        "...": "..."
+    }
+}
+```
 
 ## Usage Examples
 
@@ -24,4 +41,4 @@ go build -o /usr/local/bin/wx110_metric_check ./wx110_metric_check/main.go
 
 See https://github.com/sensu/sensu-go/blob/master/CONTRIBUTING.md
 
-[1]: https://github.com/jspaleta/sensu-controlbyweb-plugin/releases
+[1]: https://github.com/jspaleta/sensu-controlbyweb-plugins/releases
