@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"strconv"
 )
 
 var (
@@ -130,13 +131,20 @@ func run(cmd *cobra.Command, args []string) error {
 		metricName, err = os.Hostname()
 	}
 	if sensor1 || allSensors {
-		fmt.Printf("%s %s %s\n", metricName+".sensor1", output.Sensor1, output.Time)
+		if s, e := strconv.ParseFloat(output.Sensor1, 32); e == nil {
+			fmt.Printf("%s %.2f %s\n", metricName+".sensor1", s, output.Time)
+		}
 	}
 	if sensor2 || allSensors {
-		fmt.Printf("%s %s %s\n", metricName+".sensor2", output.Sensor2, output.Time)
+		if s, e := strconv.ParseFloat(output.Sensor2, 32); e == nil {
+			fmt.Printf("%s %.2f %s\n", metricName+".sensor2", s, output.Time)
+		}
 	}
 	if sensor3 || allSensors {
-		fmt.Printf("%s %s %s\n", metricName+".sensor3", output.Sensor3, output.Time)
+		if s, e := strconv.ParseFloat(output.Sensor3, 32); e == nil {
+			fmt.Printf("%s %.2f %s\n", metricName+".sensor3", s, output.Time)
+
+		}
 	}
 	return err
 }

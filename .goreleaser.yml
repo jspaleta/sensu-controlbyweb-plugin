@@ -5,7 +5,7 @@ builds:
     - CGO_ENABLED=0
     main: wx110_metric_check/main.go
     # Set the binary output location to bin/ so archive will comply with Sensu Go Asset structure
-    binary: bin/{{ .ProjectName }}
+    binary: bin/wx110_metric_check
     goos:
       - darwin
       - freebsd
