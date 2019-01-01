@@ -27,7 +27,7 @@
     "html/atom",
     "html/charset"
   ]
-  revision = "351d144fa1fc0bd934e2408202be0c29f25e35a0"
+  revision = "927f97764cc334a6575f4b7a1584a147864d5723"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -56,6 +56,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a7edfcb9bf331d23801118b4f6508b62a52c379500bd27e2fe5b6617e4fb0e85"
+  inputs-digest = "73ebd35fe21737652bb5d3c75e9ba03625bd1bbdeb46d5ed8c8f2bff24a3f788"
   solver-name = "gps-cdcl"
   solver-version = 1

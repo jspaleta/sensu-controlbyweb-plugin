@@ -8,7 +8,7 @@ install:
 - go get github.com/kisielk/errcheck
 - go get github.com/golang/dep/cmd/dep
 - dep ensure
-- git commit -a -m "fix lock file"
+- git status 
 
 script:
 - gometalinter.v1 --vendor --disable-all --enable=vet --enable=ineffassign
